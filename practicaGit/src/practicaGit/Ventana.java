@@ -36,7 +36,6 @@ public class Ventana extends javax.swing.JFrame {
         lblMes = new javax.swing.JLabel();
         cmbMeses = new javax.swing.JComboBox<>();
         lblMensaje = new javax.swing.JLabel();
-        btnVerDias = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -44,18 +43,16 @@ public class Ventana extends javax.swing.JFrame {
 
         cmbMeses.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
-                cmbMesesItemStateChanged(evt);
+                cmbMesesesItemStateChanged(evt);
+            }
+        });
+        cmbMeses.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbMesesActionPerformed(evt);
             }
         });
 
         lblMensaje.setText("JLabel2");
-
-        btnVerDias.setText("Ver Dias");
-        btnVerDias.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnVerDiasActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -64,7 +61,6 @@ public class Ventana extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnVerDias)
                     .addComponent(lblMes)
                     .addComponent(cmbMeses, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -79,73 +75,23 @@ public class Ventana extends javax.swing.JFrame {
                 .addComponent(cmbMeses, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(46, 46, 46)
                 .addComponent(lblMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnVerDias)
-                .addContainerGap(87, Short.MAX_VALUE))
+                .addContainerGap(131, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnVerDiasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerDiasActionPerformed
-<<<<<<< HEAD
-
-         String mesSeleccionado=(String)cmbMeses.getSelectedItem();
-         switch(mesSeleccionado){
-         case "enero":
-             lblMensaje.setText(mesSeleccionado+ " tiene 31 días");
-         break;
-         case "febrero":
-             lblMensaje.setText(mesSeleccionado+ " tiene 28 días");
-         break;  
-         case "marzo":
-         lblMensaje.setText(mesSeleccionado+ " tiene 31 días");
-         break;
-         case "abril":
-             lblMensaje.setText(mesSeleccionado+ " tiene 30 días");
-         break;
-          case "mayo":
-             lblMensaje.setText(mesSeleccionado+ " tiene 31 días");
-         break;
-         case "junio":
-             lblMensaje.setText(mesSeleccionado+ " tiene 30 días");
-         break;
-         case "julio":
-             lblMensaje.setText(mesSeleccionado+ " tiene 31 días");
-         break;
-         case "agosto":
-             lblMensaje.setText(mesSeleccionado+ " tiene 31 días");
-         break;
-         case "septiembre":
-             lblMensaje.setText(mesSeleccionado+ " tiene 30 días");
-         break;
-         case "octubre":
-             lblMensaje.setText(mesSeleccionado+ " tiene 31 días");
-         break;
-         case "noviembre":
-             lblMensaje.setText(mesSeleccionado+ " tiene 30 días");
-         break;
-         case "diciembre":
-             lblMensaje.setText(mesSeleccionado+ " tiene 31 días");
-         break;
-         default:
-            lblMensaje.setText("no has seleccionado ningun mes"); 
-            break;
-         }
-
-=======
-        // TODO add your handling code here:
-   
->>>>>>> e3c1a2c47763cdd9a1d772dd039c1c5363733988
-    }//GEN-LAST:event_btnVerDiasActionPerformed
-
-    private void cmbMesesItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cmbMesesItemStateChanged
+    private void cmbMesesesItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cmbMesesesItemStateChanged
     
     if(evt.getSource()==cmbMeses){
     String mesSeleccionado=(String)cmbMeses.getSelectedItem();
     lblMensaje.setText(mesSeleccionado+ " tiene "+Year.getDiasMes(mesSeleccionado)+" días");
         }
-    }//GEN-LAST:event_cmbMesesItemStateChanged
+    }//GEN-LAST:event_cmbMesesesItemStateChanged
+
+    private void cmbMesesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbMesesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbMesesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -183,7 +129,6 @@ public class Ventana extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnVerDias;
     private javax.swing.JComboBox<String> cmbMeses;
     private javax.swing.JLabel lblMensaje;
     private javax.swing.JLabel lblMes;
