@@ -28,7 +28,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="btnVerDias" min="-2" max="-2" attributes="0"/>
                   <Component id="lblMes" min="-2" max="-2" attributes="0"/>
-                  <Component id="cmbMes" min="-2" pref="149" max="-2" attributes="0"/>
+                  <Component id="cmbMeses" min="-2" pref="149" max="-2" attributes="0"/>
                   <Component id="lblMensaje" alignment="0" min="-2" pref="319" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="53" max="32767" attributes="0"/>
@@ -41,7 +41,7 @@
               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
               <Component id="lblMes" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="cmbMes" min="-2" max="-2" attributes="0"/>
+              <Component id="cmbMeses" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
               <Component id="lblMensaje" min="-2" pref="37" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -57,7 +57,7 @@
         <Property name="text" type="java.lang.String" value="Selecciona un mes : "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="cmbMes">
+    <Component class="javax.swing.JComboBox" name="cmbMeses">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="0"/>
