@@ -82,6 +82,7 @@ public class Ventana extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVerDiasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerDiasActionPerformed
+
          String mesSeleccionado=(String)cmbMeses.getSelectedItem();
          switch(mesSeleccionado){
          case "enero":
@@ -124,6 +125,7 @@ public class Ventana extends javax.swing.JFrame {
             lblMensaje.setText("no has seleccionado ningun mes"); 
             break;
          }
+
     }//GEN-LAST:event_btnVerDiasActionPerformed
 
     /**
