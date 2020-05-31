@@ -45,6 +45,11 @@ public class Ventana extends javax.swing.JFrame {
         lblMensaje.setText("JLabel2");
 
         btnVerDias.setText("Ver Dias");
+        btnVerDias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerDiasActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -75,6 +80,10 @@ public class Ventana extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnVerDiasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerDiasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnVerDiasActionPerformed
 
     /**
      * @param args the command line arguments
