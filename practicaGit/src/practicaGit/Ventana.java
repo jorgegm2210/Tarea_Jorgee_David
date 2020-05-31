@@ -42,6 +42,12 @@ public class Ventana extends javax.swing.JFrame {
 
         lblMes.setText("Selecciona un mes : ");
 
+        cmbMeses.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cmbMesesItemStateChanged(evt);
+            }
+        });
+
         lblMensaje.setText("JLabel2");
 
         btnVerDias.setText("Ver Dias");
@@ -83,7 +89,16 @@ public class Ventana extends javax.swing.JFrame {
 
     private void btnVerDiasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerDiasActionPerformed
         // TODO add your handling code here:
+   
     }//GEN-LAST:event_btnVerDiasActionPerformed
+
+    private void cmbMesesItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cmbMesesItemStateChanged
+    
+    if(evt.getSource()==cmbMeses){
+    String mesSeleccionado=(String)cmbMeses.getSelectedItem();
+    lblMensaje.setText(mesSeleccionado+ " tiene "+Year.getDiasMes(mesSeleccionado)+" días");
+        }
+    }//GEN-LAST:event_cmbMesesItemStateChanged
 
     /**
      * @param args the command line arguments
